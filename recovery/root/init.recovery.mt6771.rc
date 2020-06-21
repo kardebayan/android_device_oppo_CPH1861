@@ -61,8 +61,11 @@ on fs
     symlink /mnt/vendor/nvcfg /vendor/nvcfg
     symlink /mnt/vendor/nvdata /vendor/nvdata
 
-on post-fs
+on boot
+    # OTG
+    write /sys/devices/platform/odm/odm:oppo_charger/power_supply/usb/otg_switch 1
 
+on post-fs
 service hwservicemanager /sbin/hwservicemanager
     user root
     group root readproc
