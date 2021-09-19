@@ -94,6 +94,7 @@ SHRP_DARK := true
 SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
 
 # TWRP Configuration
+TARGET_USES_LOGD := true
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
