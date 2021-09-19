@@ -79,6 +79,20 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
+# SHRP Flags
+SHRP_PATH := device/oppo/CPH1861
+SHRP_MAINTAINER := Debayan
+SHRP_DEVICE_CODE := CPH1861
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A_only
+SHRP_NOTCH := false
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_DARK := true
+SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
+
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
