@@ -45,6 +45,7 @@ on property:ro.mtk_ufs_booting=1
     symlink /dev/block/sdb /dev/block/platform/bootdevice/by-name/preloader_b
 
 on fs
+    install_keyring
     mkdir /mnt/vendor 0700 root root
     mkdir /mnt/vendor/protect_f 0700 root root
     mkdir /mnt/vendor/protect_s 0700 root root
