@@ -16,5 +16,21 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_CPH1861-userdebug
-add_lunch_combo omni_CPH1861-eng
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
+# Inherit from CPH1861 device
+$(call inherit-product, device/oppo/CPH1861/device.mk)
+
+# Inherit some common TWRP stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
+
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := CPH1861
+PRODUCT_NAME := twrp_CPH1861
+PRODUCT_BRAND := OPPO
+PRODUCT_MODEL := CPH1861
+PRODUCT_MANUFACTURER := oppo
+PRODUCT_RELEASE_NAME := realme 1
