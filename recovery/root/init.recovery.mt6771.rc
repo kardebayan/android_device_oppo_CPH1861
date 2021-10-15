@@ -1,6 +1,7 @@
 import /trustonic.rc
 import /tee.rc
 import /init.recovery.usb.rc
+import /otg.rc
 
 on init
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
